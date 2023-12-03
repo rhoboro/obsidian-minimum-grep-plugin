@@ -52,7 +52,7 @@ export class GrepModal extends SuggestModal<RgResult> {
 	}
 
 	async getSuggestions(query: string): Promise<RgResult[]> {
-		if (query.length <= this.settings.minQueryLength && /^[\x20-\x7e]*$/.test(query)) {
+		if (query.length < this.settings.minQueryLength && /^[\x20-\x7e]*$/.test(query)) {
 			return []
 		}
 		const adapter = this.app.vault.adapter;
