@@ -1,0 +1,9 @@
+{
+	"id": "Minimum-Grep-Plugin",
+	"name": "MinimumGrepPlugin",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "MinimumGrepPlugin",
+	"author": "rhoboro",
+	"isDesktopOnly": true
+}
