@@ -119,7 +119,7 @@ export class GrepModal extends SuggestModal<RgResult> {
 	onChooseSuggestion(result: RgResult, evt: MouseEvent | KeyboardEvent) {
 		const file = this.app.vault.getAbstractFileByPath(result.name);
 		if (file instanceof TFile) {
-			const leaf = this.app.workspace.getLeaf();
+			const leaf = this.app.workspace.getLeaf('tab');
 			if (leaf) {
 				return leaf.openFile(file);
 			}
